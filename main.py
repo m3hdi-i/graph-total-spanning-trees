@@ -39,5 +39,8 @@ if __name__ == '__main__':
 
         adjacency_matrix.append(row)
 
-
-    print('Total number of spanning trees for given graph is:', get_total_number_of_spanning_trees(adjacency_matrix,nodes_count))
+    print('\n Your Adjacency Matrix : \n')
+    for row in adjacency_matrix:
+        print(" ".join(map(str,row)))
+    
+    print('\n Total number of spanning trees for given graph is:', get_total_number_of_spanning_trees(adjacency_matrix,nodes_count))
